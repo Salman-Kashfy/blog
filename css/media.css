@@ -1,0 +1,105 @@
+@media screen and (max-width: 1199px) {
+    .box,.box img,.no_thumbnail,.box iframe {
+        height: 198px;
+    }
+    .box iframe{
+        width: 333.75px;
+    }
+
+    .post_content p iframe {
+        height: 370px;
+    }
+
+}
+@media screen and (max-width: 991px) {
+    .post_content p iframe{
+        height: 343px;
+    }
+    .box,.box img,.no_thumbnail,.box iframe {
+        height: 207px;
+    }
+    .post_content p iframe {
+        height: 383px;
+    }
+}
+@media screen and (max-width: 767px) {
+    /* Menu Media*/
+    #hide2{
+        display: none !important;
+    }
+    .navbar-wrapper{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    #hide1{
+        display: block !important;
+    }
+    .logo_position_2{
+        display: inherit;
+    }
+    .nav{
+        float: none !important;
+    }
+    .inner-margin{
+        margin-bottom: 0 !important;
+    }
+    .post_content p iframe{
+        width: 100%;
+        height: 456px;
+    }
+    .video iframe{
+        max-width: 100% !important;
+        width: 100%;
+        max-height: 456px !important;
+        height: 456px;
+    }
+    .box,.box img,.no_thumbnail {
+        max-width: 100% !important;
+        width: auto;
+        max-height: 100% !important;
+        height: auto;
+    }
+    .index_content{
+        display: block !important;
+    }
+    .post_content p iframe {
+        width: 100%;
+        height: 383px;
+    }
+    .audio .index_thumbnail1 iframe{
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .audio iframe{
+        /*max-height: 203px !important;*/
+        height: 150px !important;
+    }
+    .index_thumbnail1 img:hover{
+        overflow: hidden;
+    }
+    .index_thumbnail1 img:hover{
+        -moz-transform: initial !important;
+        -webkit-transform: initial !important;
+        transform: initial !important;
+        transition: initial;
+    }
+}
+@media screen and (min-width: 991px) {
+    .widget_break{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .post_content p iframe{
+        max-width: 403px !important;
+        width: 100% !important;
+        height: 224px !important;
+        /*height: auto !important;*/
+    }
+    .video iframe{
+        max-width: 433px;
+        max-height: 247px !important;
+        height: 247px;
+    }
+}

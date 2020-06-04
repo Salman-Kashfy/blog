@@ -1,0 +1,603 @@
+/*=====================================================================
+1. General CSS
+=====================================================================*/
+*{
+
+}
+nav,nav *{
+    transition: all 0.5s;
+    -webkit-webkit-transition: all 0.5s;
+    -moz-webkit-transition: all 0.5s;
+    -ms-webkit-transition: all 0.5s;
+    -o-webkit-transition: all 0.5s;
+    webkit-transition: all 0.5s;
+    margin-bottom: 0 !important;
+}
+a{
+    color: #5a5a5a;
+}
+a:hover{
+    text-decoration: none;
+}
+/*=====================================================================
+2. Navigation/Navbar Section (Header.php)
+=====================================================================*/
+body{
+    font-family: 'Lato', sans-serif !important;
+}
+p{
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Raleway','Helvetica Neue','Helvetica',sans-serif !important;
+}
+.logo{
+    width: 200px;
+    height: auto;
+    margin-left: 10%;
+}
+.logo img{
+    height: auto;
+}
+.table{
+    display: table;
+    width: 100%;
+    height:100%;
+}
+.table-cell{
+    display: table-cell;
+    width: 100% !important;
+    vertical-align: middle;
+    /*overflow: hidden;*/
+}
+.navbar{
+    display: inline-table;
+    width: 100% !important;
+    z-index: 100 !important;
+     border-radius: 0;
+    border-color: transparent;
+}
+/*.navbar{*/
+    /*position: fixed;*/
+/*}*/
+/* ---------------------------------
+        MENU COLOR SECTION
+------------------------------------ */
+.navbar-default{
+    background-color: rgba(51,51,51,0.9) !important;
+    padding: 5px 0;
+}
+.dropdown-menu{
+    background-color: rgba(51,51,51,0.9) !important;
+}
+.nav>li>a{
+    color: #f5f5f5 !important;
+    text-align: center;
+    font-size: 16px;
+}
+.nav li a{
+    color: #f5f5f5;
+}
+.nav * a:hover {
+    color: #f5f5f5;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #303030;
+}
+/*.navbar-collapse{*/
+ /*border-top: 1px solid !important;*/
+/*}*/
+/* ---------------------------------
+   MENU COLOR SECTION
+------------------------------------ */
+.navbar-toggle {
+    /*margin-top: 15px !important;*/
+    border-radius: 0 !important;
+}
+.navbar-toggle:hover{
+    background-color:rgb(0,217,153) !important;
+    transition: all 0.9s;
+
+}
+.navbar-toggle i:hover{
+    color: white;
+}
+.navbar-toggle:hover span.icon-bar{
+    background-color: white !important;
+}
+.nav{
+    float: right !important;
+}
+.nav li:hover{
+    background-color: rgb(0,217,153) !important;
+}
+.nav li:hover > a{
+    color: white !important;
+}
+.navbar-wrapper{
+    margin-left: 0 !important;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+
+    background-color: transparent;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+
+ background-color: transparent;
+}
+a:focus, a:hover{
+    text-decoration: none;
+}
+/*=====================================================================
+3. Index.php
+=====================================================================*/
+.blog_area{
+    padding: 70px 0;
+}
+img{
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto;
+}
+.background{
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.index_thumbnail img,.index_thumbnail iframe{
+    max-width: 100%;
+    max-height: 220px;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+.box{
+    max-width: 400px;
+    width: 100%;
+    height: 240px;
+    text-align: center;
+    font-size: 0.95em;
+    overflow: hidden;
+}
+.box img {
+    height: 240px;
+    margin: 0;
+    max-width: 400px !important;
+    max-height: 240px !important;
+    width: 100% !important;
+}
+.box iframe {
+    height: 240px;
+    margin: 0;
+    max-width: 400px !important;
+    max-height: 240px !important;
+
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.index_post{
+    margin: 10px 0;
+}
+.index_title{
+    font-size: 21px;
+    margin: 0;
+    color: #5a5a5a;
+    margin-bottom: 10px;
+}
+.no_thumbnail{
+    height: 240px;
+    background-color: rgba(0,217,153,0.2);
+    font-size: 100px;
+    color: rgba(0,217,153,0.3);
+}
+.index_meta_wrapper{
+    margin: 5px 0;
+}
+.index_meta{
+    font-family: 'Montserrat', sans-serif;
+    padding-right: 10px;
+    color: #757575;
+}
+.clear{
+    clear: both;
+}
+.index_content{
+    /*border: 1px solid gainsboro;*/
+    display: grid;
+    margin: 0 auto !important;
+}
+.index_content p{
+    margin: 10px 0;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+}
+.header_image{
+    width: 100%;
+}
+.index_categories a{
+    display: inline-block;
+    padding-left: 5px;
+}
+.index_categories li{
+    display: inline-block;
+}
+.index_categories ul li a{
+    color: dimgray;
+}
+.index_categories i{
+    color: #00BCD4;
+    width: 23px;
+    padding: 5px 0 0 5px;
+    height: 23px;
+    border: 1px solid #00BCD4;
+    border-radius: 100%;
+    font-size: 12px;
+}
+.index_thumbnail1 img{
+    -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    overflow: hidden;
+}
+.index_thumbnail1 img:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.5s ease-in;
+    overflow: hidden;
+}
+/*=====================================================================
+4. Single.php
+=====================================================================*/
+
+.author_name{
+    display: inline !important;
+    font-size: 14px;
+}
+.audio_post iframe{
+    /*width: 100% !important;*/
+    height: 166px !important;
+}
+/*FOR COMPUTER AND TABLET*/
+
+.post_content p iframe{
+    width: 100%;
+    height: 456px;
+}
+/*.responsive-container{*/
+    /*position: relative;*/
+    /*padding-bottom: 56.25%;*/
+    /*padding-top:30px;*/
+    /*height: 0;*/
+    /*overflow: hidden;*/
+    /*margin-bottom: 50px;*/
+/*}*/
+/*.responsive-container p iframe{*/
+    /*position: absolute;*/
+    /*top: 0; left: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+/*}*/
+.post_content p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+.post_thumbnail{
+    margin: 10px 0;
+}
+.post_date{
+    font-family: 'Montserrat', sans-serif;
+}
+.sunset-shareThis{
+    display: block;
+    clear: both;
+}
+.sunset-shareThis ul{
+    display: block;
+    padding: 0;
+}
+.sunset-shareThis ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 5px;
+}
+.social li a i{
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    padding-top: 13px;
+    font-size: 150%;
+}
+#twitter{
+    background-color: #1da1f2;
+    color: white;
+}
+#facebook{
+    background-color: #23527c;
+    color: white;
+}
+#google{
+    background-color: #dd4b39;
+    color: white;
+}
+#pinterest{
+    background-color: #bd081b;
+    color: white;
+}
+.post_date{
+    margin: 10px 0 10px 5px;
+    color:#90908f;
+}
+.post_title{
+    letter-spacing: 0.01em;
+    font-size: 33px;
+}
+.underline:after{
+    display: block;
+    position: relative;
+    height: 1px;
+    content: "";
+    background-color: gainsboro;
+    width: 100%;
+    margin: 10px 0;
+}
+#related {
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid gainsboro;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+#related span {
+    background:#fff;
+    padding:0 10px;
+}
+.single_post{
+    padding-bottom: 50px;
+}
+/*=====================================================================
+5. Sidebar
+=====================================================================*/
+.widget{
+    /*font-family: 'Montserrat', sans-serif;*/
+    line-height: 1.8em;
+    /*padding: 10px 15px;*/
+    background-color: #fff;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    border-color: #ddd;
+    border-radius: 6px 6px 0 0;
+}
+.widgettitle{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding: 14px 0;
+    background-color: #00BCD4;
+    font-weight: 300;
+    margin-top: 10px;   /*Important for alighment with blog area*/
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 10px;
+}
+ul{
+    list-style: none;
+}
+.widget ul{
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 1.8em;
+}
+.widget > ul > li {
+    border-bottom: 1px dashed #d9d9d9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.widget > ul > li ul{
+    margin-top: 10px;
+    padding-right: 0;
+}
+.widget ul li a{
+    font-size: 13px;
+}
+.dropdown-menu{
+    right: 0;
+    left: inherit;
+}
+.image-container {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.profile-picture {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 0 auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Sidebar Post Count Section*/
+.post_count{
+    color: #f5f5f5;
+    background-color: rgb(255,128,0);
+    padding: 2px 7px;
+    border-radius: 100%;
+    float: right;
+}
+.widget > ul > li ul >li > .post_count{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.tagcloud{
+    padding: 0 10px;
+}
+.tagcloud a{
+    border: 1px solid #e5e5e5;
+    color: #4c5462;
+    display: inline-block;
+    font-size: 12px !important;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    padding: 0 10px;
+}
+/*#sidebar>.row{*/
+    /*display: initial;*/
+/*}*/
+.popular_post{
+    max-width: 40px !important;
+    float: left;
+}
+.blog_thumbnail_widget>ul>li{
+    display: flex;
+}
+.blog_thumbnail_widget>ul>li>a>div{
+    display: flex;
+    padding-left: 8px;
+}
+#search_form{
+    margin-top: 10px;
+}
+/*=====================================================================
+6. Form Validation
+=====================================================================*/
+
+.has_error{
+    border: 1px solid red;
+}
+.highlight{
+    color: red;
+}
+#form_wrapper{
+    max-width: 500px;
+}
+.result{
+    height: 50px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+#success{
+    color: rgba(60, 101, 16, 0.75);
+    background-color: #e3f2de;
+    border:1px solid rgba(60, 101, 16, 0.18);;
+    display: none;
+}
+#failed{
+    color: #a94442;
+    background-color: #f2dede;
+    border:1px solid #ebccd1;
+    display: none;
+    margin-top: 10px;
+}
+#form-loader{
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    margin-bottom: 20px;
+}
+#position{
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+
+}
+input[type=submit]{
+    margin-top: 15px;
+}
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.spin{
+    animation-name: spin;
+    animation-duration: 320ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/*=====================================================================
+7.  COMMENT SECTION
+=====================================================================*/
+
+.comment-list,.comment{
+    list-style: none;
+}
+.comment-content{
+    padding: 8px 0;
+}
+time{
+    font-size: 12px;
+    color: #5e5e5e;
+}
+.comment-list{
+    padding-left: 0;
+}
+#respond{
+    max-width: 500px;
+    width: auto;
+}
+.comment-content p{
+    margin-bottom: 5px;
+}
+.comment-content{
+    padding: 0;
+}
+/*=====================================================================
+8.  Footer SECTION
+=====================================================================*/
+
+footer{
+    background-color: rgb(33,26,35);
+}
+footer p{
+    color: gainsboro;
+    margin-bottom: 0;
+    padding: 10px 0;
+    letter-spacing: 0.04em;
+}
+.copyrights{
+    font-size: 16px;
+    font-weight: bold;
+}
+.theme-color{
+    color: #00BCD4;
+    font-weight: bold;
+}
+
+/*=====================================================================
+9.  Pagination SECTION
+=====================================================================*/
+
+.page-numbers{
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 100%;
+    margin: 0 2px;
+    color: #fafafa;
+}
+.current{
+    background-color: #00BCD4;
+}
+.nav-links{
+    display: inline-table;
+}
+.next,.prev{
+    padding: 10px 13px;
+}
+#post_navigation{
+    padding: 20px 0;
+}
+.nav-links a{
+    color: #f5f5f5;
+}

@@ -1,0 +1,31 @@
+.image-container {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.profile-picture {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 0 auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.button{
+    margin: 0 2px !important;
+}
+.image-container ul li{
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 5px;
+}
+.post_formats{
+    padding: 10px 5px !important;
+    display: inline-block !important;
+}
+.submit{
+    display: inline !important;
+}
